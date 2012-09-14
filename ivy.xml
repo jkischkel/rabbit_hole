@@ -1,0 +1,12 @@
+<ivy-module version="2.0">
+<info organisation="jk_corp" module="rh-ivy"/>
+  <dependencies>
+    <dependency org="commons-io" name="commons-io" rev="1.2"/>
+    <dependency org="commons-logging" name="commons-logging" rev="1.0"/>
+    
+    <dependency org="com.rabbitmq" name="rabbitmq-client" rev="1.3.0"/>
+    <dependency org="com.rabbitmq" name="rabbitmq-client-tests" rev="1.2.0"/>
+
+    <dependency org="junit" name="junit" rev="4.8.1"/>
+  </dependencies>
+</ivy-module>
