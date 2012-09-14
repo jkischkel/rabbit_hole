@@ -1,4 +1,4 @@
 rabbit_hole
 ===========
 
-RabbitHole
+Small application to test the RabbitMQ API.
