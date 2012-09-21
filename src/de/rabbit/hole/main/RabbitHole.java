@@ -22,12 +22,14 @@ public final class RabbitHole {
 
         if ("sender".equals(modus)) {
             System.out.println("Enter Message: ");
-            String message = readMessage();
+            Sender sender = new Sender(QUEUE_NAME, HOST);
 
-            new Sender(QUEUE_NAME, HOST).send(message);
+            while (true) {
+              String message = readMessage();
+              sender.send(message);
+            }
 
         } else if ("receiver".equals(modus)) {
-
             System.out.println("Waiting for messages");
             new Receiver(QUEUE_NAME, HOST).receive();
 
